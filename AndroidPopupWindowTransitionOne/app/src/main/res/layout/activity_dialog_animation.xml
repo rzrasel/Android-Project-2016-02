@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lineLayOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/sysBtnLeftToRight"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:onClick="sysOnClickBtnLeftToRight"
+            android:text="LEFT TO RIGHT" />
+
+        <Button
+            android:id="@+id/sysBtnRightToLeft"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:onClick="sysOnClickBtnRightToLeft"
+            android:text="RIGHT TO LEFT" />
+
+        <Button
+            android:id="@+id/sysBtnTopToBottom"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:onClick="sysOnClickBtnTopToBottom"
+            android:text="TOP TO BOTTOM" />
+
+        <Button
+            android:id="@+id/sysBtnBottomToTop"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:onClick="sysOnClickBtnBottomToTop"
+            android:text="BOTTOM TO TOP" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineLayTwo"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineLayOne"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sysBtnCustom"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:onClick="sysOnClickBtnCustom"
+            android:text="Custome" />
+    </LinearLayout>
+</RelativeLayout>
