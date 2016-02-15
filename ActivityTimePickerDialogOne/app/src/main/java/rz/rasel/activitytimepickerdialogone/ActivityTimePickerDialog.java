@@ -50,6 +50,7 @@ public class ActivityTimePickerDialog extends AppCompatActivity {
             }
         }, mHour, mMinute, false);
         //|------------------------------------|
+        timePickerDialog.setTitle("Select Time");
         timePickerDialog.show();
         //|------------------------------------|
     }
