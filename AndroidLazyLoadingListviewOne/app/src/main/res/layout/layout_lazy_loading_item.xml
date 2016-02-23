@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="50dp"
+    android:padding="8dp">
+
+    <ProgressBar
+        android:id="@+id/sysProgBar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp" />
+
+    <ImageView
+        android:id="@+id/sysImgViewThumb"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/sysProgBar"
+        android:background="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/sysLblTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sysImgViewThumb"
+        android:minLines="2"
+        android:paddingLeft="80dp"
+        android:paddingTop="5dp"
+        android:text="Hi"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sysLblReporter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sysLblTitle"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/sysImgViewThumb"
+        android:paddingLeft="80dp"
+        android:text="Sub" />
+
+    <TextView
+        android:id="@+id/sysLblDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sysLblReporter"
+        android:layout_alignParentRight="true"
+        android:text="Date" />
+</RelativeLayout>
